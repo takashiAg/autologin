@@ -20,4 +20,4 @@ while flag==0:
         print(res)
         flag=1
     except:
-        print("error")   
+        print("error")
