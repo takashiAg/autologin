@@ -3,8 +3,15 @@ import urllib2
 import base64
 import time
 import socket
-username="s17701"
-password="19961001aN"
+
+username=""
+password=""
+for line in open('login', 'r'):
+    item=line.split(",")
+    username=item[0]
+    password=item[1]
+print(username)
+print(password)
 basiclogin=base64.b64encode(username+":"+password)
 
 while 1:
